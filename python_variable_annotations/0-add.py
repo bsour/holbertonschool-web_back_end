@@ -4,7 +4,7 @@ a type-annotated function add that takes a float a and a float b
 """
 
 
-def add(a: int, b: int):
+def add(a: float, b: float) -> float:
     """
     Return sum
     """
