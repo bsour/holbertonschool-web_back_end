@@ -3,7 +3,9 @@
 Implementation of the measure_time function
 '''
 import time
+import asyncio
 from typing import Callable
+
 
 def measure_time(n: int, max_delay: int) -> float:
     '''
