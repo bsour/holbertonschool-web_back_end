@@ -5,8 +5,10 @@ measuring runtime for parallel comprehensions
 import asyncio
 from typing import List
 from time import perf_counter
+from importlib import import_module
 
-from async_comprehension import async_comprehension
+
+async_comprehension = import_module("1-async_comprehension").async_comprehension
 
 
 async def measure_runtime() -> float:
