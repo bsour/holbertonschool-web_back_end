@@ -8,7 +8,8 @@ from typing import List
 from random import uniform
 from importlib import import_module
 
-async_comprehension = import_module("1-async_comprehension").async_comprehension
+async_comprehension_module = import_module("1-async_comprehension")
+async_comprehension = async_comprehension_module.async_comprehension
 
 
 async def measure_runtime() -> float:
