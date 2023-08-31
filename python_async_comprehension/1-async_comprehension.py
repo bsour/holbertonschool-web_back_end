@@ -6,7 +6,10 @@ and return random numbers
 import asyncio
 from typing import List
 from random import uniform
-from 0-async_generator import async_generator
+from importlib import import_module
+
+# Import async_generator using import_module
+async_generator = import_module("0-async_generator").async_generator
 
 
 async def async_comprehension() -> List[float]:
