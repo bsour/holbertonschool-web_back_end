@@ -5,7 +5,7 @@ A module that contains a function to measure runtime
 import asyncio
 import time
 from typing import List
-from random import unifor
+from random import uniform
 from importlib import import_module
 
 async_comprehension = import_module("1-async_comprehension").async_comprehension
