@@ -16,10 +16,3 @@ async def async_comprehension() -> List[float]:
     collects 10 random number using async comp
     '''
     return [x async for x in async_generator()]
-
-# Test the coroutine
-async def main():
-    result = await async_comprehension()
-    print(result)
-
-asyncio.run(main())
