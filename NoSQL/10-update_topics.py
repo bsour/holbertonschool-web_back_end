@@ -17,5 +17,7 @@ def update_topics(mongo_collection, name, topics):
     Returns:
         int: The number of documents modified by the update operation.
     """
-    result = mongo_collection.update_many({"name": name}, {"$set": {"topics": topics}})
+    result = mongo_collection.update_many(
+        {"name": name}, {"$set": {"topics": topics}}
+    )
     return result
