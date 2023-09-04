@@ -11,8 +11,7 @@ def list_all(mongo_collection):
     return empty list if no document
     '''
     cursor = mongo_collection.finc({})
-
-    documents = []
-    for document in cursor:
-        documents.append(document)
+    # init an empty list
+    documents = list(cursor)
+    # return the docuemnts
     return documents
