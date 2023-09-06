@@ -15,7 +15,8 @@ def index_range(page, page_size):
     Return:
            List of particular pagination parameters
     '''
-    first_index = (page - 1) * page_size
-    last_index = page * page_size - 1
+    start_index = (page_size * (page - 1))
+    last_index = (page * page_size)
+    result = (start_index, last_index)
 
-    return (first_index, last_index)
+    return result
