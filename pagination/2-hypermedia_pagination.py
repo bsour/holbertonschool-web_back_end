@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+'''
+Implement a get_hyper method that takes the same
+arguments (and defaults) as get_page and returns
+a dictionary containing the following key-value pairs:
+'''
 import csv
 import math
 from typing import List
@@ -21,6 +27,9 @@ def index_range(page, page_size):
 
 
 class Server:
+    '''
+    Server class to paginate a database of popular baby names.
+    '''
     DATA_FILE = "Popular_Baby_Names.csv"
 
     def __init__(self):
