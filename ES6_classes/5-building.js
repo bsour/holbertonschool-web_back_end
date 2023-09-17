@@ -8,7 +8,7 @@ class Building {
   }
 
   evacuationWarningMessage() {
-    this.Error('Class extending Building must override evacuationWarningMessage');
+    this.Building.Error('Class extending Building must override evacuationWarningMessage');
   }
 }
 
