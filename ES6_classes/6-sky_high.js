@@ -15,8 +15,7 @@ class SkyHighBuilding extends Building {
   }
 
   evacuationWarningMessage() {
-    this._sqrt = this._sqft;
-    throw new Error('Evacuate slowly the NUMBER_OF_FLOORS floors');
+    return `Evacuate slowly the ${this._floors} floors`;
   }
 }
 
