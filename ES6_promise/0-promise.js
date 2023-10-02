@@ -5,3 +5,13 @@ function getResponseFromAPI() {
     }, 300);
   });
 }
+
+const responsePromise = getResponseFromAPI(); // Call the function
+
+responsePromise
+  .then((response) => {
+    console.log(response);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
