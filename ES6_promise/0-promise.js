@@ -1,17 +1,5 @@
-function getResponseFromAPI() {
+export default function getResponseFromAPI() {
   return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve('true');
-    }, 300);
+    resolve(null);
   });
 }
-
-const responsePromise = getResponseFromAPI(); // Call the function
-
-responsePromise
-  .then((response) => {
-    console.log(response);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
